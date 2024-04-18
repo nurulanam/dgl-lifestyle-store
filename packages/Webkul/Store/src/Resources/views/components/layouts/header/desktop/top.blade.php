@@ -46,17 +46,17 @@
                 role="button"
                 tabindex="0"
             >
-                <img 
-                    src="{{ ! empty(core()->getCurrentLocale()->logo_url) 
-                            ? core()->getCurrentLocale()->logo_url 
-                            : bagisto_asset('images/default-language.svg') 
+                <img
+                    src="{{ ! empty(core()->getCurrentLocale()->logo_url)
+                            ? core()->getCurrentLocale()->logo_url
+                            : bagisto_asset('images/default-language.svg')
                         }}"
                     class="h-full"
                     alt="Default locale"
                     width="24"
                     height="16"
                 />
-                
+
                 <span>
                     {{ core()->getCurrentChannel()->locales()->orderBy('name')->where('code', app()->getLocale())->value('name') }}
                 </span>
@@ -67,7 +67,7 @@
                 ></span>
             </div>
         </x-slot>
-    
+
         <!-- Dropdown Content -->
         <x-slot:content class="!p-0">
             <v-locale-switcher></v-locale-switcher>
@@ -97,7 +97,7 @@
                 class="flex items-center gap-2.5 px-5 py-2 text-base cursor-pointer hover:bg-gray-100"
                 v-for="locale in locales"
                 :class="{'bg-gray-100': locale.code == '{{ app()->getLocale() }}'}"
-                @click="change(locale)"                  
+                @click="change(locale)"
             >
                 <img
                     :src="locale.logo_url || '{{ bagisto_asset('images/default-language.svg') }}'"
@@ -152,5 +152,4 @@
         });
     </script>
 @endPushOnce
-
 {!! view_render_event('bagisto.shop.components.layouts.header.desktop.top.after') !!}

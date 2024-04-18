@@ -37,16 +37,17 @@
     </section>
 
     {{-- shop by category  --}}
-    <section class="shop-by-category pt-10 md:pt-20 pb-5">
+    <section class="shop-by-category pt-10 md:pt-20 pb-5 bg-neutral-500">
         <div class="px-5 pb-6">
-            <h2 class="h-outline text-3xl md:text-4xl text-slate-900 font-semibold">SHOP BY CATEGORY</h2>
+            <h2 class="h-outline text-3xl md:text-4xl text-white font-semibold">TRENDING: Essential Items</h2>
+            <p class="py-3 text-white">Our essentials items range from Bathroom essicials | SMART decor electronics | Modern Furniture items - and so much more Multiple customization options are also avaliable.</p>
         </div>
         <div class="grid grid-cols-12 gap-5">
             <div class="col-span-12 md:col-span-4">
                 <a href="/smart-mirrors" class="text-decoration-none">
                     <img src="{{ asset('themes/shop/store/fixedImg/featured-thumb/smart-mirror.jpg') }}" class="w-full" alt="smart-mirror.jpg">
                     <div class="p-5">
-                        <h4 class="text-slate-900 text-base font-semibold">Smart Mirrors</h4>
+                        <h4 class="text-white text-base font-semibold">Smart Mirrors</h4>
                     </div>
                 </a>
             </div>
@@ -54,7 +55,7 @@
                 <a href="/european-doors" class="text-decoration-none">
                     <img src="{{ asset('themes/shop/store/fixedImg/featured-thumb/European-Door.jpg') }}" class="w-full" alt="European-Door.jpg">
                     <div class="p-5">
-                        <h4 class="text-slate-900 text-base font-semibold">European Doors</h4>
+                        <h4 class="text-white text-base font-semibold">European Doors</h4>
                     </div>
                 </a>
             </div>
@@ -62,7 +63,7 @@
                 <a href="/living-room-furniture" class="text-decoration-none">
                     <img src="{{ asset('themes/shop/store/fixedImg/featured-thumb/Living-room-Furniture.jpg') }}" class="w-full" alt="Living-room-Furniture.jpg">
                     <div class="p-5">
-                        <h4 class="text-slate-900 text-base font-semibold">Living-room Furniture</h4>
+                        <h4 class="text-white text-base font-semibold">Living-room Furniture</h4>
                     </div>
                 </a>
             </div>
@@ -130,7 +131,7 @@
         </div>
         <div class="flex flex-wrap items-center pb-3">
             <div class="md:w-1/2 order-0">
-                <img src="{{ asset('themes/shop/store/fixedImg/insAdvice/YLighting-Exclusive-Designs.jpg') }}" class="max-w-full h-auto" alt="">
+                <img src="{{ asset('themes/shop/store/fixedImg/insAdvice/YLighting-Exclusive-Designs.jpg') }}" class="w-full" alt="">
             </div>
             <div class="md:w-1/2 pr-4 pl-4 px-4 pt-5 md:pt-0 lg:px-12 order-1">
                 <div class="max-w-620">
@@ -149,12 +150,12 @@
                 </div>
             </div>
             <div class="md:w-1/2 order-0 md:order-1">
-                <img src="{{ asset('themes/shop/store/fixedImg/insAdvice/Fall-Design-Event-Rare-Steals.jpg') }}" class="max-w-full h-auto" alt="">
+                <img src="{{ asset('themes/shop/store/fixedImg/insAdvice/Fall-Design-Event-Rare-Steals.jpg') }}" class="w-full" alt="">
             </div>
         </div>
         <div class="flex flex-wrap items-center">
             <div class="md:w-1/2 order-0">
-                <img src="{{ asset('themes/shop/store/fixedImg/insAdvice/Award-Winning-Designs.jpg') }}" class="max-w-full h-auto" alt="">
+                <img src="{{ asset('themes/shop/store/fixedImg/insAdvice/Award-Winning-Designs.jpg') }}" class="w-full" alt="">
             </div>
             <div class="md:w-1/2 pr-4 pl-4 px-4 lg:px-12 pt-5 md:pt-0 order-1">
                 <div class="max-w-620">
